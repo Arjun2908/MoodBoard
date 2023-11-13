@@ -1,0 +1,18 @@
+Video Analysis:
+
+This is the heart of the application. Without the ability to process videos and extract the necessary information (frames, dominant colors, etc.), other functionalities wouldn't have data to work on. By starting here, you'll also be able to test and ensure that videos are being analyzed correctly, setting a solid foundation for the rest of the project.
+Order: Start with video_loader.py, followed by frame_extractor.py, then color_detector.py, and finally mood_deducer.py.
+Mood Board Creation:
+
+Once the video analysis part is done, you can use the extracted data to create the mood board. This step will let you visually confirm that the analysis is being translated accurately into the visual representation.
+Order: Begin with palette_generator.py, then keyframe_arranger.py, and later mood_meter.py. Finish this section with board_exporter.py for saving/exporting functionalities.
+User Interface (UI):
+
+With the core functionalities in place, you can now build the interface through which users will interact with the tool. Starting the UI after the main logic ensures that you have a clearer understanding of what components (like buttons, sliders, display areas) are needed.
+Order: Start by setting up the main window in main_window.py. Then, implement the video upload section using video_upload.py. Once that's done, focus on the mood board display with mood_board_display.py, and finally, add any additional controls using controls.py.
+Utilities (if needed):
+
+As you progress through the above components, you might find recurring tasks or patterns that can be abstracted into utility functions. Populate the utils/helpers.py and utils/config.py as and when required.
+Integration and Testing:
+
+As the last step, once all components are developed, focus on integrating them smoothly. Your main.py will play a crucial role here, acting as the entry point and ensuring all modules interact correctly.
